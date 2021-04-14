@@ -14,7 +14,7 @@ font-family: "Roboto Mono", monospace; */
 
 html {
   font-family: "Roboto Mono", sans-serif;
-  font-size: 62.5%;
+  font-size: 10px;
 }
 :root {
   --primary-color: #5924ed;
@@ -97,6 +97,18 @@ p {
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(90, 36, 237, 0.288);
   z-index: -1;
+}
+
+/* btn outline */
+.buttons .primary-btn.outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 2px solid var(--primary-color);
 }
 
 /* Global styles End */
@@ -470,4 +482,88 @@ p {
   }
 }
 
-/* Testimonials section End*/ ;
+/* Testimonials section End*/
+
+/* About section */
+
+#about {
+  padding: 15rem 0;
+}
+#about .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#about .left {
+  padding: 2rem;
+  text-align: center;
+}
+#about .left .card {
+  box-shadow: 0px 0px 20px #4785fc33;
+  padding: 3rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  min-height: 400px;
+}
+#about .left .card .img {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 2rem;
+}
+#about .left .card img {
+  object-fit: cover;
+}
+#about .left .card .card-desc {
+  color: var(--secondary-grey);
+  margin-bottom: 2rem;
+}
+#about .left .card .card-name {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+#about .left .card .card-sub-title {
+  font-size: 1.4rem;
+}
+
+#about .subheading {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#about .right .slogan {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#about .right .right-text {
+  color: var(--secondary-grey);
+}
+
+@media only screen and (max-width: 768px) {
+  #about .wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #about .right .buttons {
+    flex-direction: column;
+  }
+
+  #about .right .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* About section End*/
