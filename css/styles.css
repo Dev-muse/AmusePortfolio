@@ -25,6 +25,7 @@ html {
 
 body {
   background-color: var(--body-bg);
+  scroll-behavior: smooth;
 }
 
 section {
@@ -713,3 +714,136 @@ p {
 }
 
 /* Projects section End*/
+
+/* Footer section */
+
+#footer {
+  background-color: #311580;
+  color: #fff;
+  padding: 10rem 5rem 0;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.col-1 {
+  flex: 3;
+  margin-right: 2rem;
+}
+.col-1 img {
+  max-width: 200px;
+  margin-left: -7px;
+  margin-bottom: 2rem;
+}
+
+.col-1 p {
+  color: #fff;
+}
+
+.col-2,
+.col-3 {
+  flex: 2;
+}
+
+.col-4 {
+  flex: 1;
+}
+
+footer svg {
+  width: 30px;
+}
+footer .column-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1.5em;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+footer li a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0.5em;
+}
+
+footer li:hover a {
+  color: var(--primary-color);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+footer li:hover {
+  background-color: #fff;
+}
+
+.col-4 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 a {
+  min-width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .col-4 ul {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* Footer section End*/
+/* Copyright */
+
+#copyright {
+  padding: 1rem 0;
+  background-color: #221052;
+}
+
+#copyright p {
+  color: #fff;
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+#copyright span {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #copyright {
+    text-align: center;
+  }
+}
+/* Copyright section End*/
