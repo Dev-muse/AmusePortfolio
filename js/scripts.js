@@ -4,6 +4,7 @@ const hamburgerMenu = document.querySelector(".nav-icon");
 const closeMenu = document.querySelector(".close-btn");
 const navContent = document.querySelector("#nav-content");
 const menuLinkArray = document.querySelectorAll("#nav-content a");
+const scrollTop = document.querySelector(".scroll-top");
 
 // open hamburgerMenu on click and hide scrollbar
 hamburgerMenu.addEventListener("click", function () {
@@ -24,3 +25,16 @@ menuLinkArray.forEach((item) => {
     document.body.style.overflow = "auto ";
   });
 });
+
+// show scroll button on scroll
+
+if (scrollTop) {
+  window.addEventListener("scroll", function () {
+    pageYOffset > window.innerHeight * 1.2
+      ? (scrollTop.style.display = "flex")
+      : (scrollTop.style.display = "none");
+  });
+  scrollTop.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+  });
+}

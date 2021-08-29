@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --primary-color: #5924ed;
+  --primary-color: #0071e3;
   --secondary-black: #0d081a;
   --secondary-grey: #48464b;
   --body-bg: snow;
@@ -114,6 +114,31 @@ p {
 
 /* Global styles End */
 
+/* scroll top icon */
+.scroll-top {
+  z-index: 100;
+  width: 60px;
+  right: 10px;
+  position: fixed;
+  justify-content: center;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  bottom: 10px;
+  border-radius: 50%;
+  background: #fff;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: none;
+}
+.scroll-top svg {
+  width: 90%;
+  color: #000;
+  pointer-events: none;
+}
 /* Navigation section */
 
 #navigation {
@@ -442,11 +467,13 @@ p {
 #services .all-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #services .item {
+  flex: 1;
   padding: 1.5rem;
+  height: 350px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -510,7 +537,7 @@ p {
 
 /* Media Queries */
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 944px) {
   #services .all-items {
     flex-direction: column;
     text-align: center;
@@ -727,6 +754,13 @@ p {
 }
 #about .right .right-text {
   color: var(--secondary-grey);
+}
+.about-icons {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1111,7 +1145,7 @@ p {
 /* Footer section */
 
 #footer {
-  background-color: #311580;
+  background-color: #013e7a;
   color: #fff;
   padding: 10rem 5rem 0;
 }
@@ -1221,7 +1255,7 @@ footer li:hover {
 
 #copyright {
   padding: 1rem 0;
-  background-color: #221052;
+  background-color: #082441;
 }
 
 #copyright p {
