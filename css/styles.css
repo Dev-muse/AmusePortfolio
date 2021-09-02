@@ -752,8 +752,10 @@ p {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
 #about .right .right-text {
   color: var(--secondary-grey);
+  text-align: left;
 }
 .about-icons {
   margin-top: 1.5rem;
@@ -774,6 +776,9 @@ p {
 
   #about .right .buttons a {
     width: 100%;
+    text-align: center;
+  }
+  #about .right .right-text {
     text-align: center;
   }
 }
@@ -1116,7 +1121,10 @@ p {
   color: #fff;
   cursor: pointer;
 }
-
+#my-form-status {
+  color: rgb(239, 255, 239);
+  margin-top: 1rem;
+}
 @media only screen and (max-width: 768px) {
   #contact {
     height: unset;
