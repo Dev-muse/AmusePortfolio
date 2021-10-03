@@ -53,7 +53,7 @@ async function handleSubmit(event) {
     },
   })
     .then((response) => {
-      status.innerHTML = "Thank you for your submission!";
+      status.innerHTML = "Thank you for reaching out, I'll get back to you ASAP";
       form.reset();
     })
     .catch((error) => {
